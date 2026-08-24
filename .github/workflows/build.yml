@@ -24,7 +24,7 @@ jobs:
           cache-disabled: true
 
       - name: Build with Installed Gradle
-        run: gradle build
+        run: gradle build --no-daemon --stacktrace
 
       - name: Upload Mod Artifact
         uses: actions/upload-artifact@v4
